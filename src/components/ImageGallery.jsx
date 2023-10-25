@@ -14,12 +14,12 @@ export default function ImageGallery() {
               {artWorks.map((work) => (
                 <motion.div
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
                   key={work.id}
                   className="test font-tiltNeon text-center"
                 >
                   <h2 className="my-2 text-xl">{work.name}</h2>
-                  <Zoom zoomImg>
+                  <Zoom>
                     <img src={work.img} alt={work.name} />
                   </Zoom>
                 </motion.div>
