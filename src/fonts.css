@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "tilt-neon";
+  src: url("./fonts/TiltNeon-Regular.woff2") format("woff2"),
+    url("./fonts/TiltNeon-Regular.woff") format("woff"),
+    url("./fonts/TiltNeon-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
