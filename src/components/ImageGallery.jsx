@@ -9,7 +9,9 @@ export default function ImageGallery() {
     <div className="Image-gallery">
       <div className="container">
         <div className="Image-gallery-wrapper">
-          <ResponsiveMasonry columnsCountBreakPoints={{ 750: 1, 768: 3 }}>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 500: 1, 550: 2, 768: 3 }}
+          >
             <Masonry gutter="10px">
               {artWorks.map((work) => (
                 <motion.div
@@ -20,7 +22,11 @@ export default function ImageGallery() {
                 >
                   <h2 className="my-2 text-xl">{work.name}</h2>
                   <Zoom>
-                    <img src={work.img} alt={work.name} />
+                    <img
+                      src={work.img}
+                      alt={work.name}
+                      className="rounded-lg"
+                    />
                   </Zoom>
                 </motion.div>
               ))}
