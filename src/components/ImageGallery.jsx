@@ -10,15 +10,15 @@ export default function ImageGallery() {
       <div className="container">
         <div className="Image-gallery-wrapper">
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 500: 1, 550: 2, 768: 3 }}
+            columnsCountBreakPoints={{ 500: 1, 640: 2, 768: 3 }}
           >
-            <Masonry gutter="10px">
+            <Masonry gutter="20px">
               {artWorks.map((work) => (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   key={work.id}
-                  className="test font-tiltNeon text-center"
+                  className="text-center my-8 sm:my-0"
                 >
                   <h2 className="my-2 text-xl">{work.name}</h2>
                   <Zoom>
