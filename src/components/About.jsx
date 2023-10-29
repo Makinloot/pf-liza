@@ -23,9 +23,7 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="mt-4 max-w-[450px]"
           >
-            <Zoom>
-              <img className="w-full rounded-lg" src={liza} alt="Liza" />
-            </Zoom>
+            <img className="w-full rounded-lg" src={liza} alt="Liza" />
           </motion.div>
           <span className="mt-2 mb-4 text-lg">Artist</span>
           <div className="About-socials flex gap-2">
