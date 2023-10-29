@@ -5,7 +5,7 @@ import ImageGallery from "./components/ImageGallery";
 function App() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <About />
       <ImageGallery />
     </div>

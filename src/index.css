@@ -17,9 +17,28 @@
   padding: 0 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  background-color: transparent;
+  background-color: rgb(0, 0, 0);
+  width: 8px;
+  user-select: all;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #94b0f5;
+  border-radius: 0.5rem;
+}
+
 body {
   background-color: #222222;
+  background-color: #000;
   color: antiquewhite;
+  overflow-x: hidden;
   @apply font-tiltNeon;
 }
 

@@ -1,41 +1,34 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import Headroom from "react-headroom";
-import { FaInstagram } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <Headroom downTolerance={1} upTolerance={20}>
-      <motion.header
-        initial={{ opacity: 0, x: "-100%" }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.3 }}
-        className="Header bg-sky-800/60 z-[1000] w-full"
-      >
+    <Headroom downTolerance={1} upTolerance={15}>
+      <header className="Header bg-[#222222b9] z-[1000] w-full">
         <div className="container">
-          <div className="Header-wrapper h-24 flex justify-end items-center">
-            <div className="Header-socials flex">
-              <SocialLinks
-                icon={<FaInstagram />}
-                url={"https://www.instagram.com/seed_9777/"}
-              />
-            </div>
+          <div className="Header-wrapper h-24 flex justify-end items-center gap-8">
+            <motion.a
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="capitalize text-xl lg:text-2xl hover:text-[#94b0f5]"
+              href="#about-section"
+            >
+              about
+            </motion.a>
+            <motion.a
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="capitalize text-xl lg:text-2xl hover:text-[#94b0f5]"
+              href="#works-section"
+            >
+              works
+            </motion.a>
           </div>
         </div>
-      </motion.header>
+      </header>
     </Headroom>
-  );
-}
-
-export function SocialLinks({ icon, marginx, url }) {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      className={`text-4xl ${marginx && "mx-2"}`}
-    >
-      {icon}
-    </a>
   );
 }

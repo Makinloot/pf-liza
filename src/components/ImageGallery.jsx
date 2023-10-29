@@ -6,7 +6,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function ImageGallery() {
   return (
-    <div className="Image-gallery">
+    <section className="Image-gallery" id="works-section">
       <div className="container">
         <div className="Image-gallery-wrapper">
           <ResponsiveMasonry
@@ -34,6 +34,6 @@ export default function ImageGallery() {
           </ResponsiveMasonry>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
