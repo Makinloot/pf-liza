@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-import Zoom from "react-medium-image-zoom";
 import instagram from "/icons/instagram.svg";
 import telegram from "/icons/telegram.svg";
 import liza from "/liza.jpg";

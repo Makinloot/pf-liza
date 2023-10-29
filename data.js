@@ -44,7 +44,7 @@ const artWorks = [
   {
     id: uuidv4(),
     img: image3,
-    name: "Some image 3",
+    name: "Untitled",
   },
   {
     id: uuidv4(),
@@ -65,7 +65,7 @@ const artWorks = [
   {
     id: uuidv4(),
     img: image11,
-    name: "Some image 11",
+    name: "Untitled",
   },
   {
     id: uuidv4(),
@@ -91,7 +91,7 @@ const artWorks = [
   {
     id: uuidv4(),
     img: image10,
-    name: "Some image 10",
+    name: "Untitled",
   },
   {
     id: uuidv4(),
@@ -131,7 +131,7 @@ const artWorks = [
   {
     id: uuidv4(),
     img: image17,
-    name: "some image 17",
+    name: "Untitled",
   },
   {
     id: uuidv4(),
@@ -177,7 +177,7 @@ const artWorks = [
   {
     id: uuidv4(),
     img: image21,
-    name: "Some image 21",
+    name: "Untitled",
   },
   {
     id: uuidv4(),

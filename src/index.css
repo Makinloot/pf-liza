@@ -25,13 +25,17 @@ html {
 html::-webkit-scrollbar {
   background-color: transparent;
   background-color: rgb(0, 0, 0);
-  width: 8px;
+  width: 12px;
   user-select: all;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #94b0f5;
+  background-color: #94b0f5a9;
   border-radius: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #94b0f5;
 }
 
 body {
