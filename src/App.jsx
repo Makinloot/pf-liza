@@ -4,7 +4,7 @@ import ImageGallery from "./components/ImageGallery";
 
 function App() {
   return (
-    <div>
+    <div className="pb-10">
       <Header />
       <About />
       <ImageGallery />
